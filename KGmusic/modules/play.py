@@ -436,7 +436,7 @@ async def m_cb(b, cb):
             await cb.answer("assistant is not connected to voice chat!", show_alert=True)
 
 
-@Client.on_message(command(["play", "p"]) & other_filters)
+@Client.on_message(command(["play", "p", "tot"]) & other_filters)
 async def play(_, message: Message):
     global que
     global useer
@@ -931,7 +931,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,    photo="final.png",
             caption = f"💡 **Track added to the queue** » `{position}`\n\n🏷 **Title:** [{title}]({url})\n⏱ **Duration:** `{duration}`\n" \
-                    + f"🎧 **Request by:** {r_by.mention}",
+                    + f"🎧 **Request by:** {message.from_user.mention}",
                    reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -953,7 +953,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             caption = f"🏷 **Title:** [{title}]({url})\n⏱ **Duration:** {duration}\n💡 **Status:** Playing\n" \
-                    + f"🎧 **Request by:** {r_by.mention}",
+                    + f"🎧 **Request by:** {message.from_user.mention}",
                     reply_markup=keyboard,
         )
         os.remove("final.png")
