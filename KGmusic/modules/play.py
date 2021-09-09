@@ -682,8 +682,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"💡 **Track added to the queue**\n\n🏷 **Title:** [{title[:60]}]({url})\n⏱ **Duration:** `{duration}`\n🎧 **Request by:** {message.from_user.mention}\n" \
-                    + f"\n🔢 **Track position:** » `{position}` «",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »`{position}`«",
                    reply_markup=keyboard)
        
     else:
@@ -702,8 +701,7 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Title:** [{title[:60]}]({url})\n⏱ **Duration:** `{duration}`\n💡 **Status:** Playing\n" \
-                    + f"🎧 **Request by:** {message.from_user.mention}",
+            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}",
                    reply_markup=keyboard,)
 
     os.remove("final.png")
@@ -825,8 +823,7 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"💡 **Track added to the queue**\n\n🏷 **Title:** [{title[:30]}]({url})\n⏱ **Duration:** `{duration}`\n🎧 **Request by:** {message.from_user.mention}\n" \
-                    + f"\n🔢 **Track position:** » `{position}` «",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »`{position}`«",
                    reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -847,8 +844,7 @@ async def ytplay(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Title:** [{title[:30]}]({url})\n⏱ **Duration:** {duration}\n💡 **Status:** Playing\n" \
-                    + f"🎧 **Request by:** {message.from_user.mention}",
+            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}",
                    reply_markup=keyboard,)
         os.remove("final.png")
         return await lel.delete()
@@ -930,8 +926,7 @@ async def lol_cb(b, cb):
         qeue.append(appendable)
         await cb.message.delete()
         await b.send_photo(chat_id,    photo="final.png",
-            caption = f"💡 **Track added to the queue** » `{position}`\n\n🏷 **Title:** [{title}]({url})\n⏱ **Duration:** `{duration}`\n" \
-                    + f"🎧 **Request by:** {message.from_user.mention}",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »`{position}`«",
                    reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -952,8 +947,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption = f"🏷 **Title:** [{title}]({url})\n⏱ **Duration:** {duration}\n💡 **Status:** Playing\n" \
-                    + f"🎧 **Request by:** {message.from_user.mention}",
+            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}",
                     reply_markup=keyboard,
         )
         os.remove("final.png")
