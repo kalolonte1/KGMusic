@@ -69,15 +69,13 @@ async def start_(client: Client, message: Message):
                        "👥 Official Group", url=f"https://t.me/{SUPPORT_GROUP}"
                    ),
                    InlineKeyboardButton(
-                       "📣 Updates Channel", url=f"https://t.me/rakasupport"
+                       "📣 Updates Channel", url=f"https://t.me/aboutraks"
                    )
                 ],
                 [
                    InlineKeyboardButton(
                        "🛠️ Source code", url=f"https://github.com/kalolonte1/KGMusic"
-                   ),
-                   InlineKeyboardButton(
-                       "✨ Donation", url=f"https://t.me/knsgnwn")
+                   )
                 ]
             ]
         ),
@@ -100,10 +98,10 @@ async def start(client: Client, message: Message):
             [   
                 [    
                     InlineKeyboardButton(
-                        "👥 Group", url=f"https://t.me/KGSupportgroup"
+                        "👥 Group", url=f"https://t.me/MusicRakaSupport"
                     ),
                     InlineKeyboardButton(
-                        "⏺️ Channel", url=f"https://t.me/rakasupport"
+                        "⏺️ Channel", url=f"https://t.me/abotraks"
                     )
                 ]
             ]
@@ -127,7 +125,7 @@ async def help(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧑‍💻 Creator", url=f"https://t.me/knsgnwn"
+                        "🧑‍💻 Creator", url=f"https://t.me/rakaaanjayy"
                     )
                 ]
             ]
@@ -145,12 +143,12 @@ async def reload(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "Group Support 🏷️", url=f"https://t.me/KGSupportgroup"
+                        "Group Support 🏷️", url=f"https://t.me/MusicRakaSupport"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "Channel Update 📣", url=f"https://t.me/rakasupport"
+                        "Channel Update 📣", url=f"https://t.me/abotraks"
                     )
                 ]
             ]
@@ -182,7 +180,7 @@ async def get_uptime(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "Group Support", url=f"https://t.me/KGSupportgroup"
+                        "Group Support", url=f"https://t.me/MusicRakaSupport"
                     )
                 ]
             ]
